@@ -12,6 +12,8 @@ echo "Downloading and installing helm-push v${version} ..."
 
 url=${HELM_PUSH_PLUGIN_URL}
 
+echo ${url}
+
 if [ -n "${url}" ]; then
     if [ "$(uname)" = "Darwin" ]; then
         url="https://github.com/chartmuseum/helm-push/releases/download/v${version}/helm-push_${version}_darwin_amd64.tar.gz"
